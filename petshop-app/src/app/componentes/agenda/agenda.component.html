@@ -1,0 +1,18 @@
+<div class="header">
+    <button routerLink="/home" class="nav-button">Home</button>
+    <button class="nav-button">Agenda Banho e Tosa</button>
+
+    <button class="nav-button">Clientes</button>
+    <button class="nav-button">Histórico</button>
+</div>
+
+<div class="container">
+    <div class="agenda-column" *ngFor="let day of agenda">
+        <div class="agenda-header">Agenda {{ day.date }}</div>
+        <div class="agenda-item" *ngFor="let item of day.items">
+            <div class="item-header">{{ item.type }} {{ item.date }} {{ item.time }}</div>
+            <div class="item-detail">Fulano S.</div>
+            <div class="item-detail">{{ item.location }}</div>
+        </div>
+    </div>
+</div>
