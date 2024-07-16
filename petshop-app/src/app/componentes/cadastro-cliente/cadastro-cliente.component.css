@@ -5,20 +5,21 @@
     align-items: center;
 }
 
-.form {
+.form__dadosPessoais {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 350px;
-    background-color: #fff;
+    max-width: 400px;
+    background: #b4b4b4;
     padding: 20px;
     border-radius: 20px;
     position: relative;
+    margin-top: 50px;
 }
 
 .title {
     font-size: 28px;
-    color: royalblue;
+    color: #0371ac;
     font-weight: 600;
     letter-spacing: -1px;
     position: relative;
@@ -35,13 +36,13 @@
     width: 16px;
     border-radius: 50%;
     left: 0px;
-    background-color: royalblue;
+    background-color: #0371ac;
 }
 
 .title::before {
     width: 18px;
     height: 18px;
-    background-color: royalblue;
+    background-color: #0371ac;
 }
 
 .title::after {
@@ -50,23 +51,11 @@
     animation: pulse 1s linear infinite;
 }
 
-.message,
-.signin {
+.message {
     color: rgba(88, 87, 87, 0.822);
     font-size: 14px;
 }
 
-.signin {
-    text-align: center;
-}
-
-.signin a {
-    color: royalblue;
-}
-
-.signin a:hover {
-    text-decoration: underline royalblue;
-}
 
 .flex {
     display: flex;
@@ -79,10 +68,10 @@
 }
 
 .form label .input {
-    width: 100%;
+    width: 87%;
     padding: 10px 10px 20px 10px;
     outline: 0;
-    border: 1px solid rgba(105, 105, 105, 0.397);
+    border: 1.5px solid #FF0094;
     border-radius: 10px;
 }
 
@@ -112,19 +101,108 @@
     color: green;
 }
 
+.flex2 {
+    display: flex;
+    gap: 6px;
+}
+
 .submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.submit__avancar {
     border: none;
     outline: none;
-    background-color: royalblue;
+    background-color: #FF0094;
     padding: 10px;
     border-radius: 10px;
     color: #fff;
     font-size: 16px;
     transform: .3s ease;
+    width: 40%;
+    cursor: pointer;
 }
 
-.submit:hover {
-    background-color: rgb(56, 90, 194);
+.submit__cancelar {
+    border: none;
+    outline: none;
+    background-color: #6e0040;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    width: 25%;
+    cursor: pointer;
+}
+
+.submit__avancar:hover {
+    background-color: #0371AC;
+    color: #000;
+    transform: .3s ease;
+}
+
+.submit__cancelar:hover {
+    background-color: #0371AC;
+    color: #000;
+    transform: .3s ease;
+}
+
+.dadosResidenciasCliente {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__dadosResidencais {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    background: #b4b4b4;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.flex-residenciais {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form label .input-rua-bairro {
+    width: 90%;
+}
+
+.form label .input-complementos {
+    width: 84%;
+}
+
+.concluirCadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.marca__opcionais {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0 20px 0;
+}
+
+.opcionais {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #605e5e;
 }
 
 @keyframes pulse {

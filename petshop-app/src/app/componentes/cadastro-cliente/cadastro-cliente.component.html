@@ -1,33 +1,100 @@
 <div class="dadosPessoaisCliente">
-    <form class="form">
-        <p class="title">Register </p>
-        <p class="message">Signup now and get full access to our app. </p>
+    <form class="form form__dadosPessoais">
+        <p class="title">Cadastro</p>
+        <p class="message">Dados Pessoais do cliente:</p>
         <div class="flex">
             <label>
                 <input required="" placeholder="" type="text" class="input">
-                <span>Firstname</span>
+                <span>Nome</span>
             </label>
 
             <label>
                 <input required="" placeholder="" type="text" class="input">
-                <span>Lastname</span>
+                <span>Sobrenome</span>
             </label>
         </div>
 
-        <label>
-            <input required="" placeholder="" type="email" class="input">
-            <span>Email</span>
-        </label>
+        <div class="flex2">
+            <label>
+                <input required="" placeholder="" type="tel" class="input">
+                <span>CPF</span>
+            </label>
 
-        <label>
-            <input required="" placeholder="" type="password" class="input">
-            <span>Password</span>
-        </label>
-        <label>
-            <input required="" placeholder="" type="password" class="input">
-            <span>Confirm password</span>
-        </label>
-        <button class="submit">Submit</button>
-        <p class="signin">Already have an acount ? <a href="#">Signin</a> </p>
+            <label>
+                <input required="" placeholder="" type="tel" class="input">
+                <span>Nascimento</span>
+            </label>
+        </div>
+        <div class="submit">
+            <button class="submit__avancar">Avançar</button>
+            <button class="submit__cancelar">Cancelar</button>
+        </div>
+    </form>
+</div>
+
+<div class="dadosResidenciasCliente">
+    <form class="form form__dadosResidencais">
+        <p class="title">Cadastro</p>
+        <p class="message">Dados Residenciais do cliente:</p>
+        <div class="flex-residenciais">
+            <label>
+                <input required="" placeholder="" type="tel" class="input input-rua-bairro">
+                <span>Rua</span>
+            </label>
+
+            <label>
+                <input required="" placeholder="" type="text" class="input input-rua-bairro">
+                <span>Bairro</span>
+            </label>
+        </div>
+
+        <div class="flex2">
+            <label>
+                <input required="" placeholder="" type="tel" class="input input-complementos">
+                <span>Número</span>
+            </label>
+
+            <label>
+                <input required="" placeholder="" type="tel" class="input input-complementos">
+                <span>Complemento</span>
+            </label>
+
+            <label>
+                <input required="" placeholder="" type="tel" class="input input-complementos">
+                <span>CEP</span>
+            </label>
+        </div>
+        <div class="submit">
+            <button class="submit__avancar">Avançar</button>
+            <button class="submit__cancelar">Voltar</button>
+        </div>
+    </form>
+</div>
+
+<div class="concluirCadastro">
+    <form class="form form__dadosPessoais">
+        <p class="title">Cadastro</p>
+        <p class="message">E-mail e celular do cliente:</p>
+        <div class="flex-residenciais">
+            <label>
+                <input required="" placeholder="" type="text" class="input input-rua-bairro">
+                <span>E-mail</span>
+            </label>
+
+            <label>
+                <input required="" placeholder="" type="tel" class="input input-rua-bairro">
+                <span>Celular</span>
+            </label>
+        </div>
+        <div class="marca__opcionais">
+            <span class="opcionais"><input type="checkbox" name="" id="">Fora ligações podemos mandar mensagens para o seu número via WhatsApp?
+            </span>
+            <span class="opcionais"><input type="checkbox" name="" id="">Podemos enviar e-mails contendos novidades e promoções exclusivas para você?
+            </span>
+        </div>
+        <div class="submit">
+            <button class="submit__avancar">Concluir</button>
+            <button class="submit__cancelar">Voltar</button>
+        </div>
     </form>
 </div>
